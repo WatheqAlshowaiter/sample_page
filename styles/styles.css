@@ -1,0 +1,408 @@
+/* Start General Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-text-color: #394154;
+    --light-text-color: #768695;
+    --white-color: #FFF;
+    --background-light: #eef3f9;
+    --background-dark: #2c353e;
+}
+
+body {
+    font-family: sans-serif;
+    color: #3b415b;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.content {
+    width: 100%;
+    margin: auto;
+    background-color: var(--white-color);
+}
+
+/* End General Styling */
+
+/* Start Section Home */
+
+section#home {
+    background-color: var(--background-light);
+}
+
+#home .container {
+    padding: 2% 10%;
+}
+
+#home .container header {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#home .container header .logo {
+    flex: 1;
+}
+
+#home .container header .logo h1 {
+    flex: 1;
+    font-weight: normal;
+}
+
+#home .container header .navbar {
+    flex: 1;
+    text-align: center;
+}
+
+#home .container header .navbar ul {
+    list-style: none;
+    margin-top: 5px;
+}
+
+#home .container header .navbar ul li {
+    display: inline;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+#home .container header .navbar ul li a:link {
+    color: var(--light-text-color);
+}
+
+#home .container header .navbar ul li a:visited {
+    color: var(--light-text-color);
+}
+
+#home .container header .navbar ul li a:hover {
+    border-bottom: 2px solid #7c878d;
+    border-radius: 1px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+#home .main {
+    /* background-color: blueviolet; */
+    margin-top: 25px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#home .main__text {
+    flex: 3;
+    padding-top: 40px;
+}
+
+#home .main__title {
+    color: var(--dark-text-color);
+    font-size: 40px;
+    font-weight: normal;
+    flex: 80%;
+}
+
+#home .main__desc {
+    margin: 15px 0;
+    color: var(--light-text-color);
+}
+
+#home .main .landscape {
+    flex: 20%;
+}
+
+#home .main button {
+    color: var(--white-color);
+    background-color: #bcccd9;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    border: #bcccd9;
+}
+
+#home .main button:hover {
+    background-color: var(--dark-text-color);
+    cursor: pointer;
+}
+
+/* End Section Home */
+
+/* Start Section Services */
+
+#services .services__container {
+    padding: 5% 10%;
+}
+
+#services .services__container .services__highlight {
+    text-align: center;
+}
+
+#services .services__container .services__highlight .services__header {
+    font-weight: normal;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#services .services__container .services__highlight .services__paragraph {
+    line-height: 1.9;
+}
+
+#services .services__container .services__components {
+    display: flex;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#services .services__container .services__components>div {
+    margin: 10px 10px;
+}
+
+#services .services__container .services__components>div i {
+    margin-bottom: 10px;
+}
+
+#services .services__container .services__components>div h3 {
+    margin-bottom: 10px;
+}
+
+#services .services__container .services__components .services__web-design {
+    flex: 1;
+}
+
+#services .services__container .services__components .services__branding {
+    flex: 1;
+}
+
+#services .services__container .services__components .services__print {
+    flex: 1;
+}
+
+#services .services__container .services__components .services__writing {
+    flex: 1;
+}
+
+/* End Section Services */
+
+/* Start Section Office */
+
+#office {
+    background-color: var(--background-light);
+}
+
+#office .office__container {
+    padding: 5% 10%;
+    text-align: center;
+}
+
+#office .office__container .office__header {
+    font-weight: normal;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#office .office__container .office__paragraph {
+    line-height: 1.9;
+}
+
+#office .office__container .office__video {
+    margin-top: 10px;
+}
+
+/* End Section Office */
+
+/* Start Section Feature */
+
+#feature .feature__container {
+    padding: 5% 10%;
+}
+
+#feature .feature__container .feature__highlight {
+    text-align: center;
+}
+
+#feature .feature__container .feature__header {
+    font-weight: normal;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#feature .feature__container .feature__paragraph {
+    line-height: 1.9;
+}
+
+#feature .feature__container .feature__components {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#feature .feature__container .feature__components>div {
+    flex-basis: 30%;
+    margin: 0 10px 20px;
+}
+
+#feature .feature__container .feature__components>div i {
+    margin-bottom: 10px;
+}
+
+#feature .feature__container .feature__components>div h3 {
+    margin-bottom: 10px;
+}
+
+/* End Section Feature */
+
+/* Start Section Thanks */
+
+#thanks .thanks__container {
+    padding: 5% 10%;
+    text-align: center;
+}
+
+#thanks .thanks__container .thanks__highlight .thanks__header {
+    font-weight: normal;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#thanks .thanks__container button {
+    color: var(--white-color);
+    background-color: #bcccd9;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    border: #bcccd9;
+}
+
+#thanks .thanks__container button:hover {
+    background-color: var(--dark-text-color);
+    cursor: pointer;
+}
+
+/* End Section Thanks */
+
+/* Start Section Pricing */
+
+#pricing {
+    background-color: var(--background-dark);
+    color: #84909c;
+}
+
+#pricing .pricing__container {
+    padding: 5% 10%;
+}
+
+#pricing .pricing__container .white {
+    color: var(--white-color);
+}
+
+#pricing .pricing__container hr {
+    border: 0;
+    height: 0;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    ;
+}
+
+#pricing .pricing__container .pricing__prices {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+#pricing .pricing__container .pricing__prices .pricing__packages {
+    flex: 25%;
+    /* position: relative; */
+}
+
+#pricing .pricing__container .pricing__prices .pricing__packages p {
+    margin: 20px 0;
+}
+
+#pricing .pricing__container .pricing__prices .pricing__packages .pricing__type {
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+#pricing .pricing__container .pricing__prices .pricing__packages .pricing__money{
+    position: relative;
+}
+#pricing .pricing__container .pricing__prices .pricing__packages p .dollars {
+    font-size: 1.1em;
+    position: absolute;
+    left: -3px;
+    top: 1px;
+    left: -10px;
+}
+
+#pricing .pricing__container .pricing__prices .pricing__packages .pricing_cost {
+    font-size: 50px;
+}
+
+#pricing .pricing__container .pricing__prices .pricing__packages button {
+    color: var(--white-color);
+    background-color: #434c55;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 25px;
+    border: #bcccd9;
+    letter-spacing: 2px;
+}
+
+#pricing .pricing__container .pricing__prices .pricing__packages button:hover {
+    background-color: #3e454d;
+    cursor: pointer;
+}
+
+#pricing .pricing__container footer {
+    display: flex;
+    margin: 40px 0 20px;
+}
+
+#pricing .pricing__container footer .pricing__navbar {
+    flex: 6;
+}
+
+#pricing .pricing__container footer .pricing__social-icons {
+    flex: 1;
+}
+
+#pricing .pricing__container footer .pricing__navbar ul {
+    list-style: none;
+}
+
+#pricing .pricing__container footer .pricing__navbar ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#pricing .pricing__container footer .pricing__navbar ul li a:link {
+    color: #84909c;
+}
+
+#pricing .pricing__container footer .pricing__navbar ul li a:visited {
+    color: #84909c;
+}
+
+#pricing .pricing__container footer .pricing__navbar ul li a:hover {
+    color: var(--white-color);
+}
+
+#pricing .pricing__container footer .pricing__social-icons i {
+    margin-right: 20px;
+}
+
+#pricing .pricing__container footer .pricing__social-icons i:hover {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+#pricing .pricing__container .copyright {
+    padding-top: 20px;
+}
+
+/* End Section Pricing */
