@@ -1,3 +1,6 @@
+## live preview
+https://watheqalshowaiter.github.io/sample_page/
+
 ## notes
 
 - this work is a try to make sample image of website into code in HTML/CSS.
