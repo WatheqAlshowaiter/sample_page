@@ -1,6 +1,10 @@
 ## live preview
 https://watheqalshowaiter.github.io/sample_page/
 
+## the image I have copied from img to HTML/CSS
+
+![image I copied from img to HTML/CSS](https://github.com/WatheqAlshowaiter/sample_page/blob/master/image.jpg?raw=true)
+
 ## notes
 
 - this work is a try to make sample image of website into code in HTML/CSS.
