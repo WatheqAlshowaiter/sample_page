@@ -45,15 +45,16 @@ section#home {
 
 #home .container header {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
 #home .container header .logo {
-  flex: 1;
+  /* flex: 1; */
 }
 
 #home .container header .logo h1 {
-  flex: 1;
+  /* flex: 1; */
   font-weight: normal;
 }
 
@@ -143,11 +144,72 @@ section#home {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-#home .main .landscape img {
-  width: 100%;
-  min-width: 400px;
+  #home .main .landscape img {
+    width: 100%;
+    min-width: 400px;
+  }
 }
-} 
+
+/* start responsive nav */
+
+header .navbar ul {
+  /* width: 80%; */
+  float: right;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header .navbar ul li {
+  list-style: none;
+  display: inline-block;
+  /* padding: 20px; */
+}
+header .navbar ul li:hover {
+  /* background: gray;
+  opacity: 0.8; */
+}
+header .navbar .toggle {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  box-sizing: border-box;
+  color: var(--background-dark);
+  font-size: 20px;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  header .logo {
+    position: absolute !important;
+    top: 15px !important;
+  }
+  .toggle {
+    display: block !important;
+  }
+  .toggle i {
+    cursor: pointer;
+  }
+  .active {
+    display: block !important;
+  }
+
+  #home > div > header > div.navbar > ul {
+    width: 100%;
+    display: none;
+  }
+  #home .container header .navbar ul li {
+    display: block !important;
+    text-align: center !important;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  #home .container header .navbar ul li:hover {
+    background: #2d353e1a;
+  }
+}
+
+/* end responsive nav */
 
 /* End Section Home */
 
@@ -512,7 +574,6 @@ section#home {
   #pricing .pricing__container footer .pricing__social-icons {
     margin-top: 2em;
     font-size: 2em;
-
   }
 }
 
