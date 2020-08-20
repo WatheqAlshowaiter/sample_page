@@ -117,7 +117,7 @@ section#home {
   flex: 20%;
 }
 #home .main .landscape img {
-
+  width: 100%;
 }
 
 #home .main button {
@@ -141,6 +141,13 @@ section#home {
     margin-bottom: var(--margin-bottom-small);
   }
 }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+#home .main .landscape img {
+  width: 100%;
+  min-width: 400px;
+}
+} 
 
 /* End Section Home */
 
